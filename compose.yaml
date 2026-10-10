@@ -1,0 +1,14 @@
+services:
+  commande-db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: commande
+      POSTGRES_USER: commande
+      POSTGRES_PASSWORD: commande        
+    ports:
+      - "127.0.0.1:5435:5432"
+    volumes:
+      - commande-dev-data:/var/lib/postgresql/data
+
+volumes:
+  commande-dev-data: {}

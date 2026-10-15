@@ -1,4 +1,4 @@
-package com.glop.config;
+package com.glop.commande.in.restapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,3 @@ public class SecurityConfig {
                 .build();
     }
 }
-
-
-
-

@@ -1,17 +1,11 @@
-package com.glop;
+package com.glop.commande;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CommandeApp {
+public class CommandeApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CommandeApp.class, args);
+        SpringApplication.run(CommandeApplication.class, args);
     }
 }
-
-
-
-
-
-

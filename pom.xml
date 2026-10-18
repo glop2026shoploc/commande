@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.glop</groupId>
-	<artifactId>catalogue</artifactId>
+	<artifactId>commande</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

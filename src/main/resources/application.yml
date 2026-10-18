@@ -4,11 +4,11 @@ server:
 spring:
   application:
     name: commande
-
+    
   datasource:
-    url: jdbc:postgresql://localhost:5435/Commande
-    username: admin
-    password: admin123
+    url: jdbc:postgresql://localhost:5435/commande
+    username: commande
+    password: commande
     driver-class-name: org.postgresql.Driver
 
   jpa:

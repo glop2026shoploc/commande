@@ -34,3 +34,9 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 2
+
+  retry:
+    instances:
+      catalogue:
+        maxAttempts: 2
+        waitDuration: 500ms

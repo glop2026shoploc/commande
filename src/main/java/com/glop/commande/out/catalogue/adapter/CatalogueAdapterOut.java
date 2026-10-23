@@ -2,6 +2,7 @@ package com.glop.commande.out.catalogue.adapter;
 
 import com.glop.commande.domain.port.out.CataloguePort;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
@@ -17,6 +18,7 @@ public class CatalogueAdapterOut implements CataloguePort {
 
     @Override
     @CircuitBreaker(name = "catalogue", fallbackMethod = "getCatalogueFallback")
+    @Retry(name = "catalogue", fallbackMethod = "getCatalogueFallback")
     public String getCatalogueInfo() {
         return restClient.get()
                 .uri("/api/catalogue/test")
